@@ -37,7 +37,7 @@ class App extends Component {
       </Col>
           </Row>
         </Container>
-        <Container>
+        <Container id="card-container">
           <Row className="justify-content-md-center">
             {this.state.characters.map((info, index) =>
               <Cards
