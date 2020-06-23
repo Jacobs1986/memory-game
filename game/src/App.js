@@ -21,8 +21,8 @@ class App extends Component {
   }
 
   // Function to do something when the character is clicked.
-  characterClick= () => {
-    console.log("You selected a character");
+  characterClick = event => {
+    console.log("This is a test");
   }
 
   render() {
@@ -52,15 +52,17 @@ class App extends Component {
         </Container>
         <Container id="card-container">
           <Row className="justify-content-md-center">
-            {this.state.characters.map((info, index) =>
-              <Cards
+           {this.state.characters.map((info, index) => {
+             return (
+               <Cards 
                 key={index}
                 name={info.name}
                 image={info.image}
                 clicked={this.state.clickState}
-                select={this.characterClick}
-              />
-            )}
+                onClick={this.characterClick} 
+               />
+             )
+           })}
             </Row>
         </Container>
       </div>
