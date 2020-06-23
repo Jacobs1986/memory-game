@@ -6,5 +6,33 @@
     {
         "name": "Wolverine",
         "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/05/Wolverine-comic.jpg"
+    },
+    {
+        "name": "Storm",
+        "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/01/X-Men-10-Times-Storm-Earned-Her-Status-As-An-Omega-Level-Mutant.jpg"
+    },
+    {
+        "name": "Cyclops",
+        "image": "https://www.usajacket.com/blog/wp-content/uploads/2017/09/Cyclops-X-Men-Scott-Summers-Costume-810x427.jpg"
+    },
+    {
+        "name": "Professor Xavier",
+        "image": "https://hedwig-cf.netmarble.com/forum-common/mherosgb/futurefight_en/thumbnail/50b9e68986b142ffa7a23053f260106e_1578200011829_d.jpg"
+    },
+    {
+        "name": "Beast",
+        "image": "https://static.comicvine.com/uploads/original/6/63413/1510426-beast_bricks.jpg"
+    },
+    {
+        "name": "Jubilee",
+        "image": "https://classicmarvelforever.com/cms/assets/images/profiles/comic_book/Jubilee.png"
+    },
+    {
+        "name": "Gambit",
+        "image": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/34/1472207635-comic-comics-20020-is-a-gambit-standalone-x-men-movie-a-bad-idea.jpeg"
+    },
+    {
+        "name": "Rogue",
+        "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/05/X-Men-Anatomy-Rogue.jpg"
     }
 ]
