@@ -10,6 +10,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// Css
+import "./App.css"
+
 class App extends Component {
   state = {
     characters: characters
@@ -19,7 +22,7 @@ class App extends Component {
     return (
       <Container>
         <Row>
-          <h1>Match Game!</h1>
+          <h1 className="center">Match Game!</h1>
         </Row>
         <Row>
           Click each of the characters below to raise your score. Make sure you click each character only once! Can you beat your highscore?
