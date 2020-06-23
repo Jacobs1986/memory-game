@@ -15,7 +15,8 @@ import "./App.css"
 
 class App extends Component {
   state = {
-    characters: characters
+    characters: characters,
+    score: 0
   }
 
   render() {
@@ -23,17 +24,23 @@ class App extends Component {
       <div>
         <Container>
           <Row>
-            <h1 className="center">Match Game!</h1>
+            <h1 className="center">Marvel Memory</h1>
           </Row>
           <Row>
-            Click each of the characters below to raise your score. Make sure you click each character only once! Can you beat your highscore?
+            <h3>
+              Apocalypse is at it again! This time he's erased the X-Men's memory. Help them get it back by clicking each hero only once! Careful though, each time you choose one they will change position. It's up to you to keep track of who you have already helped.
+            </h3>
       </Row>
           <Row>
             <Col md={3}>
-              Score:
+              <h4>
+                Score: {this.state.score}
+              </h4>
       </Col>
             <Col md={3}>
-              Highscore:
+              <h4>
+                Highscore:
+              </h4>
       </Col>
           </Row>
         </Container>
