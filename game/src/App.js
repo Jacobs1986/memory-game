@@ -16,7 +16,8 @@ import "./App.css"
 class App extends Component {
   state = {
     characters: characters,
-    score: 0
+    score: 0,
+    clickState: false
   }
 
   render() {
@@ -51,6 +52,7 @@ class App extends Component {
                 key={index}
                 name={info.name}
                 image={info.image}
+                clicked={this.state.clickState}
               />
             )}
             </Row>
