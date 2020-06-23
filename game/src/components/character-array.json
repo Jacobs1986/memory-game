@@ -1,8 +1,10 @@
 [
     {
-        "name": "Jean Grey"
+        "name": "Jean Grey",
+        "image": "https://i.pinimg.com/originals/f8/54/fc/f854fcbef3a8b032586e89a17299e889.jpg"
     },
     {
-        "name": "Wolverine"
+        "name": "Wolverine",
+        "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/05/Wolverine-comic.jpg"
     }
 ]
