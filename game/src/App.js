@@ -22,7 +22,7 @@ class App extends Component {
 
   // Function to do something when the character is clicked.
   characterClick = event => {
-    console.log("This is a test");
+    console.log(event.target.name);
   }
 
   render() {
@@ -59,7 +59,7 @@ class App extends Component {
                 name={info.name}
                 image={info.image}
                 clicked={this.state.clickState}
-                onClick={this.characterClick} 
+                select={this.characterClick} 
                />
              )
            })}
