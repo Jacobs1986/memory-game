@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// components
+import Character from "./components/Character-cards";
+
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from 'react-bootstrap/Container';
