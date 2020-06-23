@@ -20,6 +20,11 @@ class App extends Component {
     clickState: false
   }
 
+  // Function to do something when the character is clicked.
+  characterClick= () => {
+    console.log("You selected a character");
+  }
+
   render() {
     return (
       <div>
@@ -53,6 +58,7 @@ class App extends Component {
                 name={info.name}
                 image={info.image}
                 clicked={this.state.clickState}
+                onClick={this.characterClick}
               />
             )}
             </Row>
