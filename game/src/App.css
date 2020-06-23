@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 
-h1 {
+h1, .h5 {
     font-family: 'Trade Winds', cursive;
 }
 
@@ -13,4 +13,14 @@ h1 {
 .card {
     margin-bottom: 2rem;
     margin-right: 2rem;
+}
+
+.card-body {
+    padding-top: 9px;
+    padding-bottom: 0px;
+    background-color: gold;
+}
+
+.card-title {
+    text-align: center;
 }
