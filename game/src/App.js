@@ -37,6 +37,7 @@ class App extends Component {
             <Cards 
               key={index}
               name={info.name}
+              image={info.image}
             />
           )}
         </Row>
