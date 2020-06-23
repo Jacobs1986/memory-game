@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div>
-      Testing to make sure that the App is working
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <div>
+        Testing to make sure that the App is working
+      </div>
+    );
+  }
 }
 
 export default App;
