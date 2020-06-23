@@ -58,7 +58,7 @@ class App extends Component {
                 name={info.name}
                 image={info.image}
                 clicked={this.state.clickState}
-                onClick={this.characterClick}
+                select={this.characterClick}
               />
             )}
             </Row>
