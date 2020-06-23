@@ -18,6 +18,7 @@ h1, .h5 {
 .card {
     margin-bottom: 2rem;
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 .card-body {
