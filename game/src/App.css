@@ -8,3 +8,9 @@
 h1 {
     font-family: 'Trade Winds', cursive;
 }
+
+/* Card styling */
+.card {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
