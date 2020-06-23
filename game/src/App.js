@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 // components
-import Character from "./components/Character-cards";
+import characters from "./components/character-array.json";
+import Cards from "./components/Character-cards";
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,6 +11,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class App extends Component {
+  state = {
+    characters: characters
+  }
 
   render() {
     return (
@@ -29,7 +33,12 @@ class App extends Component {
           </Col>
         </Row>
         <Row>
-          Character cards go here
+          {this.state.characters.map((info, index) =>
+            <Cards 
+              key={index}
+              name={info.name}
+            />
+          )}
         </Row>
       </Container>
     );
