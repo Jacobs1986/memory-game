@@ -20,32 +20,36 @@ class App extends Component {
 
   render() {
     return (
-      <Container>
-        <Row>
-          <h1 className="center">Match Game!</h1>
-        </Row>
-        <Row>
-          Click each of the characters below to raise your score. Make sure you click each character only once! Can you beat your highscore?
-        </Row>
-        <Row>
-          <Col md={3}>
-            Score:
-          </Col>
-          <Col md={3}>
-            Highscore:
-          </Col>
-        </Row>
-        <Row>
-          {this.state.characters.map((info, index) =>
-            <Cards 
-              key={index}
-              name={info.name}
-              image={info.image}
-            />
-          )}
-        </Row>
-      </Container>
-    );
+      <div>
+        <Container>
+          <Row>
+            <h1 className="center">Match Game!</h1>
+          </Row>
+          <Row>
+            Click each of the characters below to raise your score. Make sure you click each character only once! Can you beat your highscore?
+      </Row>
+          <Row>
+            <Col md={3}>
+              Score:
+      </Col>
+            <Col md={3}>
+              Highscore:
+      </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row className="justify-content-md-center">
+            {this.state.characters.map((info, index) =>
+              <Cards
+                key={index}
+                name={info.name}
+                image={info.image}
+              />
+            )}
+            </Row>
+        </Container>
+      </div>
+    )
   }
 }
 
