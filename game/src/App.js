@@ -60,7 +60,6 @@ class App extends Component {
                 id={index}
                 name={info.name}
                 image={info.image}
-                clicked={info.clicked}
                 click={this.characterClick}
                />
              )

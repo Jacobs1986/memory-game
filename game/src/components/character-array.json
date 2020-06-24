@@ -2,38 +2,46 @@
     {
         "name": "Jean Grey",
         "image": "https://i2.wp.com/stimulatedboredom.com/wp-content/uploads/2015/04/jean_grey_marvel_xmen_superheroes_comics_2560x1440_hd-wallpaper-1899852.jpg?fit=2560%2C1440",
-        "clicked": "no"
+        "clicked": false
     },
     {
         "name": "Wolverine",
-        "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/05/Wolverine-comic.jpg"
+        "image": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/05/Wolverine-comic.jpg",
+        "clicked": false
     },
     {
         "name": "Storm",
-        "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/01/X-Men-10-Times-Storm-Earned-Her-Status-As-An-Omega-Level-Mutant.jpg"
+        "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/01/X-Men-10-Times-Storm-Earned-Her-Status-As-An-Omega-Level-Mutant.jpg",
+        "clicked": false
     },
     {
         "name": "Cyclops",
-        "image": "https://www.usajacket.com/blog/wp-content/uploads/2017/09/Cyclops-X-Men-Scott-Summers-Costume-810x427.jpg"
+        "image": "https://www.usajacket.com/blog/wp-content/uploads/2017/09/Cyclops-X-Men-Scott-Summers-Costume-810x427.jpg",
+        "clicked": false
     },
     {
         "name": "Professor Xavier",
-        "image": "https://hedwig-cf.netmarble.com/forum-common/mherosgb/futurefight_en/thumbnail/50b9e68986b142ffa7a23053f260106e_1578200011829_d.jpg"
+        "image": "https://hedwig-cf.netmarble.com/forum-common/mherosgb/futurefight_en/thumbnail/50b9e68986b142ffa7a23053f260106e_1578200011829_d.jpg",
+        "clicked": false
     },
     {
         "name": "Beast",
-        "image": "https://static.comicvine.com/uploads/original/6/63413/1510426-beast_bricks.jpg"
+        "image": "https://static.comicvine.com/uploads/original/6/63413/1510426-beast_bricks.jpg",
+        "clicked": false
     },
     {
         "name": "Jubilee",
-        "image": "https://classicmarvelforever.com/cms/assets/images/profiles/comic_book/Jubilee.png"
+        "image": "https://classicmarvelforever.com/cms/assets/images/profiles/comic_book/Jubilee.png",
+        "clicked": false
     },
     {
         "name": "Gambit",
-        "image": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/34/1472207635-comic-comics-20020-is-a-gambit-standalone-x-men-movie-a-bad-idea.jpeg"
+        "image": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/34/1472207635-comic-comics-20020-is-a-gambit-standalone-x-men-movie-a-bad-idea.jpeg",
+        "clicked": false
     },
     {
         "name": "Rogue",
-        "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/05/X-Men-Anatomy-Rogue.jpg"
+        "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/05/X-Men-Anatomy-Rogue.jpg",
+        "clicked": false
     }
 ]
