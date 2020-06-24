@@ -16,14 +16,19 @@ import "./App.css"
 class App extends Component {
   state = {
     characters: characters,
-    score: 0,
-    clickState: false
+    score: 0
   }
 
   // Function to do something when the character is clicked.
   characterClick(event) {
     console.log(event.target.id);
-    console.log(characters[event.target.id].clicked)
+    let clickState = characters[event.target.id].clicked;
+    console.log(clickState)
+    if (!clickState) {
+      clickState = true
+    } else {
+      clickState = false
+    }
   }
 
   render() {
@@ -60,6 +65,7 @@ class App extends Component {
                 id={index}
                 name={info.name}
                 image={info.image}
+                clicked={info.clicked}
                 click={this.characterClick}
                />
              )
