@@ -39,14 +39,12 @@ class App extends Component {
 }
 
 // Function to do something when the character is clicked.
-characterClick(event) {
-  console.log(event.target.id);
-  let clickState = characters[event.target.id].clicked;
-  console.log(clickState)
+characterClick = () => {
+  this.setState({ characters: this.shuffle(characters) });
 }
 
 componentDidMount() {
-  this.setState({ characters: this.shuffle(characters)});
+  this.setState({ characters: this.shuffle(characters) });
 }
 
   render() {
