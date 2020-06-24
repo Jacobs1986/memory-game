@@ -22,7 +22,8 @@ class App extends Component {
 
   // Function to do something when the character is clicked.
   characterClick(event) {
-    console.log(event.target);
+    console.log(event.target.id);
+    console.log(characters[event.target.id].clicked)
   }
 
   render() {
@@ -56,9 +57,10 @@ class App extends Component {
              return (
                <Cards 
                 key={index}
+                id={index}
                 name={info.name}
                 image={info.image}
-                clicked={this.state.clickState}
+                clicked={info.clicked}
                 click={this.characterClick}
                />
              )
