@@ -39,18 +39,22 @@ class App extends Component {
 }
 
 // Function to do something when the character is clicked.
-characterClick = (event) => {
+characterClick = (state) => {
   // The function gets the click state of the object
-  // Variable is set to save the current state of the click state
   // Conditional statement
-  // If the state is false 
+  // If the state is false
+  if (!state) { 
     // then it needs to be set to true
+    console.log("This character hasn't been selected yet.")
     // The score needs to update
     // Then the entire array needs to be reshuffled
+  }
   // Else if the state is true
+  else {
+    console.log("This character has been selected.")
     // The game is over.
     // The current score needs to be set to high score
-
+  }
 }
 
 componentDidMount() {
