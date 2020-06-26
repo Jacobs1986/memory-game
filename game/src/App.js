@@ -45,9 +45,11 @@ characterClick = (event) => {
   // Conditional statement
   // If the state is false 
     // then it needs to be set to true
+    // The score needs to update
     // Then the entire array needs to be reshuffled
   // Else if the state is true
     // The game is over.
+    // The current score needs to be set to high score
 
 }
 
