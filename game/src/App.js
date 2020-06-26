@@ -16,7 +16,6 @@ import "./App.css"
 class App extends Component {
   state = {
     characters: characters,
-    clicked: false,
     score: 0,
     highscore: 0
   }
@@ -106,7 +105,7 @@ componentDidMount() {
                 id={index}
                 name={info.name}
                 image={info.image}
-                clicked={this.state.clicked}
+                clicked={info.clicked}
                 click={this.characterClick}
                />
              )
