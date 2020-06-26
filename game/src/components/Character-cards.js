@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Character(props) {
     return (
-        <Card style={{ width: '18rem' }} onClick={() => {props.click(props.clicked)}}>
+        <Card style={{ width: '18rem' }} onClick={() => {props.click(props.index)}}>
             <Card.Img variant='top' src={props.image} style={{ height: '13rem' }} />
             <Card.Body>
                 <Card.Title name={props.name}>{props.name}</Card.Title>
