@@ -40,13 +40,15 @@ class App extends Component {
 
 // Function to do something when the character is clicked.
 characterClick = (event) => {
-  console.log(event.target.id);
-  let clickState = characters[event.target.id].clicked;
-  console.log(clickState);
-  if (!clickState) {
-    clickState = true;
-    this.setState({ characters: this.shuffle(characters) });
-  }
+  // The function gets the click state of the object
+  // Variable is set to save the current state of the click state
+  // Conditional statement
+  // If the state is false 
+    // then it needs to be set to true
+    // Then the entire array needs to be reshuffled
+  // Else if the state is true
+    // The game is over.
+
 }
 
 componentDidMount() {
