@@ -102,7 +102,7 @@ componentDidMount() {
                 id={index}
                 name={info.name}
                 image={info.image}
-                clicked={info.clicked}
+                clicked={this.state.clicked}
                 click={this.characterClick}
                />
              )
