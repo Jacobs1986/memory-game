@@ -16,6 +16,7 @@ import "./App.css"
 class App extends Component {
   state = {
     characters: characters,
+    clicked: false,
     score: 0
   }
 
@@ -50,7 +51,10 @@ characterClick = (id) => {
     characters[id].clicked = true;
     // The score needs to update
     // Then the entire array needs to be reshuffled
-    this.setState({ characters: this.shuffle(characters) });
+    this.setState({ 
+      characters: this.shuffle(characters),
+      score: this.state.score + 1
+    });
   }
   // Else if the state is true
   else {
