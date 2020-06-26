@@ -40,23 +40,24 @@ class App extends Component {
 
 // Function to do something when the character is clicked.
 characterClick = (id) => {
-  console.log(characters[id].clicked)
   // The function gets the click state of the object
+  // Set the state to a variable
+  let state = characters[id].clicked
   // Conditional statement
   // If the state is false
-  // if (!) { 
-  //   // then it needs to be set to true
-  //   state = true;
-  //   // The score needs to update
-  //   // Then the entire array needs to be reshuffled
-  //   this.setState({ characters: this.shuffle(characters) });
-  // }
+  if (!state) { 
+    // then it needs to be set to true
+    characters[id].clicked = true;
+    // The score needs to update
+    // Then the entire array needs to be reshuffled
+    this.setState({ characters: this.shuffle(characters) });
+  }
   // Else if the state is true
-  // else {
-  //   console.log("This character has been selected.")
-  //   // The game is over.
-  //   // The current score needs to be set to high score
-  // }
+  else {
+    console.log("This character has been selected.")
+    // The game is over.
+    // The current score needs to be set to high score
+  }
 }
 
 componentDidMount() {
