@@ -17,7 +17,8 @@ class App extends Component {
   state = {
     characters: characters,
     clicked: false,
-    score: 0
+    score: 0,
+    highscore: 0
   }
 
   shuffle = array => {
@@ -58,9 +59,12 @@ characterClick = (id) => {
   }
   // Else if the state is true
   else {
-    console.log("This character has been selected.")
+    console.log("GAME OVER");
     // The game is over.
     // The current score needs to be set to high score
+    this.setState({
+      highscore: this.state.score
+    })
   }
 }
 
@@ -88,7 +92,7 @@ componentDidMount() {
       </Col>
             <Col md={3}>
               <h4>
-                Highscore:
+                Highscore: {this.state.highscore}
               </h4>
       </Col>
           </Row>
