@@ -45,9 +45,10 @@ characterClick = (state) => {
   // If the state is false
   if (!state) { 
     // then it needs to be set to true
-    console.log("This character hasn't been selected yet.")
+    state = true;
     // The score needs to update
     // Then the entire array needs to be reshuffled
+    this.setState({ characters: this.shuffle(characters) });
   }
   // Else if the state is true
   else {
