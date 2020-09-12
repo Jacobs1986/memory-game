@@ -1,0 +1,25 @@
+{
+    "name": "memory-game",
+    "version": "1.0.0",
+    "description": "Can you get the highscore?",
+    "main": "server.js",
+    "scripts": {
+        "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+        "start:prod": "node server.js",
+        "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+        "client": "cd client && yarn run start",
+        "install": "cd client && yarn install",
+        "build": "cd client && yarn run build",
+        "heroku-postbuild": "yarn run build"
+    },
+    "author": "Sean Jacobson",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "nodemon": "^2.0.4"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "if-env": "^1.0.4"
+    }
+}
